@@ -283,6 +283,7 @@ class Request
             $this->internalArray['CC_OWNER'] = $this->card->getCardOwnerName();
             if ($this->card->isEnableTokenCreation()) {
                 $this->internalArray['LU_ENABLE_TOKEN'] = '1';
+                $this->internalArray['LU_TOKEN_TYPE'] = 'PAY_BY_CLICK';
             }
         }
 
