@@ -54,6 +54,7 @@ final class RequestBuilder
             $requestArray['CC_OWNER'] = $request->getCard()->getCardOwnerName();
             if ($request->getCard()->isEnableTokenCreation()) {
                 $requestArray['LU_ENABLE_TOKEN'] = '1';
+                $requestArray['LU_TOKEN_TYPE'] = 'PAY_BY_CLICK';
             }
         }
 
